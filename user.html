@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자정보 입력받고 출력하기</title>
+    <style>
+        #hobby{
+            color: orchid;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <p id="animal"></p>
+    <p id="game"></p>
+
+    <script>
+        const nameElement = document.querySelector("#name");
+        let name = prompt("당신의 이름은?");
+        nameElement.textContent = name;
+
+        const animalElement = document.querySelector("#animal");
+        let animal = prompt("당신이 좋아하는 동물은?");
+        animalElement.textContent = `제가 좋아하는 동물은 ${animal}입니다!`;
+
+        const gameElement = document.querySelector("#game");
+        let game = prompt("당신이 좋아하는 게임은?");
+        gameElement.textContent = `제가 좋아하는 게임은 ${game}입니다!`;
+    </script>
+</body>
+</html>
